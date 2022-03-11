@@ -1,0 +1,38 @@
+package com.javaoo.store;
+import java.util.*;
+import java.io.*;
+
+public class BookExerciser {
+
+	public static void main(String[] args) {
+		
+		
+		public String readBooksFromFile(String name) {
+			try {
+				ArrayList<Book> books = new ArrayList<Book>();
+				FileInputStream inFile = new FileInputStream(name);
+				InputStreamReader inReader = new InputStreamReader(inFile);
+				LineNumberReader lineReader = new LineNumberReader(inReader);
+				
+				String line = lineReader.readLine();
+				while(line != null) {
+					System.out.println(line);
+					line = lineReader.readLine();
+				}
+				System.out.println(line);
+			}
+			catch(IOException e) {
+				e.printStackTrace();
+			}
+			//books.add(line);
+			//return books;
+			return line;
+
+		}
+		
+		String location="C:\\Users\\Tiffany\\eclipse-workspace\\Store\\src\\com\\javaoo\\store\\books.txt";
+		readBooksFromFile(location);
+		
+	}
+
+}

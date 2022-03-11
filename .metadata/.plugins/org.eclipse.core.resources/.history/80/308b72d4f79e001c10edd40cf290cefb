@@ -1,0 +1,41 @@
+package com.lq.exercises;
+
+public class Lab3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		/* Exercise 1 
+		
+		String[] daysOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+		
+		
+		 for( int i = 0; i < daysOfWeek.length; i++) {
+			System.out.println( daysOfWeek[i] );
+		}
+		
+		 System.out.println("\nREVERSED:" );
+		 
+		for( int i = (daysOfWeek.length-1); i >= 0; i--) {
+			System.out.println(daysOfWeek[i] );
+		} 
+		 * 
+		 */
+		
+		/* Exercise 2 */
+		
+		int i = 0;
+		while(i <21) {
+			i++;
+			System.out.println( "i = " + i + "i%2 = " + i%2 );
+			if (i%2 != 0) 
+				continue;
+	
+			System.out.println( i );
+			
+		}
+
+	}
+
+}

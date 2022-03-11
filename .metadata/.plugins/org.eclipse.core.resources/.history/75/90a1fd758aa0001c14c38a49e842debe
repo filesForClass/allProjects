@@ -1,0 +1,9 @@
+package com.javaoo.store.drivers;
+import com.javaoo.store.Artist;
+import com.javaoo.store.CD;
+
+public class InventoryDriver {
+	
+	CD newCD = new CD(Artist a, "01-01-2000");
+	
+}

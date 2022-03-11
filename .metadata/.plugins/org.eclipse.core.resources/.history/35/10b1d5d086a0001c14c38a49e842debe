@@ -1,0 +1,13 @@
+import com.javaoo.store.*;
+
+public class Main {
+
+	Item[] myIventory = new Item[50];
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+	}
+
+}

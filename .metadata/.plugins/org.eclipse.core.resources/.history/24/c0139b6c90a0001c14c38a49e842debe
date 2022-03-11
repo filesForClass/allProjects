@@ -1,0 +1,17 @@
+package com.javaoo.store.drivers;
+
+import java.util.TreeSet;
+
+public class ArtistExerciser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		TreeSet<String> instruments1 = new TreeSet<String>();
+		
+		instruments1.add("Piano","Clarinet","Hurdy Gurdy", "Tuba");
+		
+		//Artist hotPlate = new Artist("")
+	}
+
+}

@@ -1,0 +1,68 @@
+package com.javaoo.store;
+
+public class Artist {
+		private String name;
+		private String[] memberNames = new String[20];
+		private String[] memberInstruments = new String[20];
+		int memberCount = 0;
+		int instrumentCount = 0;
+		
+	
+
+		public Artist(String name) {
+			super();
+			setName(name);
+		}
+		
+		public String getName() {
+			return name;
+		}
+		
+		public void setName(String name) {
+			this.name = name;
+		}
+		
+		public void addMember(String p){
+			if (memberCount >= memberNames.length) {
+				System.out.println("Cannot add more");
+			}
+			else{
+				memberNames[memberCount] = p;
+				memberCount++;
+			}
+		}
+		public String showMembers() {
+			String memberArray = "";
+			
+			for(int i = 0; i < memberCount; i++) {
+				memberArray += (memberNames[i]);
+				
+				if( i != (memberCount-1)) {
+					memberArray += (" ");
+				}
+			}
+			return memberArray;
+		}
+		public void addInstrument(String p){
+			if (instrumentCount >= memberInstruments.length) {
+				System.out.println("Cannot add more");
+			}
+			else{
+				memberInstruments[instrumentCount] = p;
+				instrumentCount++;
+			}
+		}
+		public String showInstruments() {
+			String instrumentArray = "";
+			
+			for(int i = 0; i < instrumentCount; i++) {
+				instrumentArray += (memberInstruments[i]);
+				
+				if( i != (instrumentCount-1)) {
+					instrumentArray += (" ");
+				}
+			}
+			return instrumentArray;
+		}
+	
+}

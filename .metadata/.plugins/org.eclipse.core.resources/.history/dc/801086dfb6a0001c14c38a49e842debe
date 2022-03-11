@@ -1,0 +1,24 @@
+package com.lq.ac;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class WriteToFile {
+
+	public static void main(String[] args) {
+		
+		try {
+			BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\deleteLater\t.txt"));
+			
+			bw.write("Hello World");
+			
+			bw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

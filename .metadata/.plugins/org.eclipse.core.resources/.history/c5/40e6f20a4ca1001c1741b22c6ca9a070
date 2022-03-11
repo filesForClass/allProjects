@@ -1,0 +1,58 @@
+package com.javaoo.store;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.LineNumberReader;
+import java.util.List;
+
+
+public class BookExerciser {
+	
+	public static List<Book> readBooksFromFile(String name){
+		
+		List<Book> books;
+		try {
+			FileInputStream inFile = new FileInputStream(name);
+			InputStreamReader inReader= new InputStreamReader(inFile);
+			LineNumberReader lineReader = new LineNumberReader(inReader);
+			
+			String line = lineReader.readLine();
+			
+			while( (line = lineReader.readLine() ) != null) {
+				
+				String title = line;
+				
+				line = lineReader.readLine();
+				
+				String author = line;
+				
+				line = lineReader.readLine();
+				
+				double price =  Double.parseDouble(line);
+				
+				Book b = new Book(title,price, 1, author, "A", "Sci0-FI");
+				
+				books.add(b);
+				
+			}		
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return books;
+			
+	}
+	
+	
+	public static void main(String[] args) {
+	
+
+
+		String name = "C:\\Users\\Tiffany\\eclipse-workspace\\Store\\src\\com\\javaoo\\store\\books.txt";
+		
+		List<Book> books = readBooksFromFile(name);
+		for (Book s : books) {
+		 System.out.println( s.getTitle() );
+		}
+	}
+	
+}

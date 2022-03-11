@@ -1,0 +1,5 @@
+package com.lq.vehicle;
+
+public abstract class Car {
+
+}

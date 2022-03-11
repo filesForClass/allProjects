@@ -1,0 +1,32 @@
+package com.javaoo.store;
+import java.util.*;
+import java.io.*;
+
+public class BookExerciser {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Book> books = new ArrayList<Book>();
+		
+		public ArrayList<Book> readBooksFromFile(String name) {
+			try {
+				FileInputStream inFile = new FileInputStream(name);
+				InputStreamReader inReader = new InputStreamReader(inFile);
+				LineNumberReader lineReader = new LineNumberReader(inReader);
+				
+				String line = lineReader.readLine();
+				while(line != null) {
+					System.out.println(line);
+					line = lineReader.readLine();
+				}
+			}
+			catch(IOException e) {
+				e.printStackTrace();
+			}
+			return books;
+
+		}
+		
+	}
+
+}

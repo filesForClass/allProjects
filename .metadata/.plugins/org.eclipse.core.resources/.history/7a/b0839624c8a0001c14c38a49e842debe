@@ -1,0 +1,41 @@
+package com.javaoo.store;
+import java.util.*;
+import java.io.*;
+
+public class BookExerciser {
+
+	public static void main(String[] args) {
+		
+		
+		
+		public ArrayList<Book> readBooksFromFile(String name) {
+			try {
+				ArrayList<Book> books = new ArrayList<Book>();
+				InputStream inFile = new FileInputStream(name);
+				Reader inStreamReader= new InputStreamReader(inFile);
+				LineNumberReader lineReader = new LineNumberReader(inStreamReader);
+				
+				String line = lineReader.readLine();
+				
+				int iterCount = 0; //tests if multiple of 3
+				while(line != null) {
+					String value1 = line;
+					line = lineReader.readLine();
+					String value2 = line;
+					line = lineReader.readLine();
+					double value3 = line;
+					books.add(value1,value2,value3);
+					line = lineReader.readLine();		
+				}
+			}
+			catch(IOException e) {
+				e.printStackTrace();
+			}
+			return(books);
+		}
+		
+		String location ="C:\\Users\\Tiffany\\eclipse-workspace\\Store\\src\\com\\javaoo\\store\\books.txt";
+		List<Book> books = readBooksFromFile(location);
+		
+	}
+}

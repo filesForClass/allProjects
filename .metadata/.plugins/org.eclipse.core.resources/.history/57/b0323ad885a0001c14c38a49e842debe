@@ -1,0 +1,16 @@
+package com.javaoo.store.drivers
+
+import com.javaoo.Book;
+import com.javaoo.Item;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Item[] myInventory = new Item();
+		
+		myInventory[0] = new Book("The Last Ship")
+	}
+
+}

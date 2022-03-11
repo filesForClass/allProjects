@@ -1,0 +1,23 @@
+package com.javaoo.calculators;
+
+public class scientificCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		static final double PI = 3.14159;
+		private double holdValue;
+		
+		public double exp(double a) {
+			exp(a);
+		}
+		
+		public double log(double a) {
+			ln(a);
+		}
+		
+		public double putValueInMemory() {
+			
+		}
+	}
+
+}

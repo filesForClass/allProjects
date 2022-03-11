@@ -1,0 +1,25 @@
+package com.lq.ac;
+
+import java.io.FileNotFoundException;
+import java.io.LineNumberReader;
+
+public class ReadJFile {
+
+	public static void main(String[] args) {
+		
+		try {
+			InputStream inFile = new FileInputStream("D:\\deleteLater\\test.txt");
+			
+			Reader inStreamReader = new InputStreamReader(inFile);
+			
+			LineNumberReader lineReader = new LineNumberReader(inStreamReader);
+			
+			System.out.println(lineReader.lines());
+		}
+		
+		catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

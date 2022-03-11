@@ -1,0 +1,13 @@
+package com.javaoo.store;
+
+import com.javaoo.store.drivers.Item;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Item[] myInventory = new Item[50];
+		
+	}
+
+}

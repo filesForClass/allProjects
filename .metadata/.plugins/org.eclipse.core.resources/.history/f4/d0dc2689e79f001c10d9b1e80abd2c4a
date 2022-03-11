@@ -1,0 +1,11 @@
+package lab3;
+
+public class Square extends Rectangle {
+	
+	@Override
+	Square(double s){
+		super.setLength(s);
+		super.setWidth(s);
+	}
+
+}

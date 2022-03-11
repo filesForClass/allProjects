@@ -1,0 +1,20 @@
+package com.lq.ac;
+
+import java.io.File;
+
+public class getContentofDir {
+	
+	public static void main(String[] args) {
+	
+		File f = new File("D:\\deleteLater\\test");
+		
+		if( f.isDirectory() ) {
+			
+			String[] contents = f.list();
+			
+			for(String s: contents) {
+				System.out.println( s );
+			}
+	}
+ }
+}

@@ -1,0 +1,18 @@
+package com.lq.vehicle;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Car c = new SportsCar();
+		
+		
+		SportsCar aa = new AAB();
+		
+		SportsCar Sc = new SportsCar();
+		c.setSpeed(300);
+		
+		System.out.println(aa.getSpeed());
+	}
+
+	
+}

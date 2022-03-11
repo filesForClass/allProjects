@@ -1,0 +1,22 @@
+package com.lq.vehicle;
+
+import com.lq.inh.exception.SpeedWayOutofRangeException;
+
+public class SportsCar extends Car {
+	
+	private static final int MAX_SPEED = 200;
+	
+	
+	public void setSpeed(int speed) throws SpeedWayOutofRangeException {
+		if (speed > 200) {
+			
+			throw new SpeedWayOutofRangeException();
+			
+		}
+		else {
+			this.speed = speed;
+		}
+	}
+	
+	
+}

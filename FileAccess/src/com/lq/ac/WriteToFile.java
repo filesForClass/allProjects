@@ -1,0 +1,36 @@
+package com.lq.ac;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class WriteToFile {
+
+	public static void main(String[] args) {
+		
+		try {
+			
+			
+			
+			BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\deleteLater\\t.txt"));
+			
+			PrintWriter out = new PrintWriter(new FileWriter("D:\\deleteLater\\t.txt", true));
+			
+		    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+		    System.out.println("Enter input for file::");
+
+		    String userInput = myObj.nextLine();  // Read user input
+			
+			bw.write(userInput);
+			
+			bw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

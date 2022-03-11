@@ -1,0 +1,10 @@
+package com.javaoo.store.drivers;
+import com.javaoo.store.Artist;
+import com.javaoo.store.CD;
+
+public class InventoryDriver {
+	
+	Artist newArtist = new Artist("Britney Spears");
+	CD newCD = new CD(newArtist, ft.format(07/07/2000));
+	
+}

@@ -1,0 +1,23 @@
+package com.lq.vehicle;
+
+import java.util.HashSet;
+
+public class Main {
+	public static void main(String[] args) {
+		
+
+		HashSet<Car> carHashSet = new HashSet<Car>();
+		
+		carHashSet.add( new StationWagon() );
+		carHashset.add( new SportsCar() );
+		
+		Iterator<Car> iter = carHashSet.iterator();
+		
+		while( iter.hasNext() ) {
+			Car t = iter.next();
+			System.out.println( t.getSpeed() );
+		}
+	}
+
+	
+}

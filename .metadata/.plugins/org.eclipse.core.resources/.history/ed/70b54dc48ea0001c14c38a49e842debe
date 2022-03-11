@@ -1,0 +1,26 @@
+package com.javaoo.store;
+import java.util.*;
+
+public class Artist {
+		private String name;
+	    private TreeSet<String> memberNames = new TreeSet<String>();
+	    private Map<String, SortedSet<String>> memberInstruments;
+		
+	
+
+		public Artist(String name) {
+			super();
+			setName(name);
+		}
+		
+		public String getName() {
+			return name;
+		}
+		
+		public void setName(String name) {
+			this.name = name;
+		}
+		
+
+	
+}

@@ -1,0 +1,19 @@
+package com.lq.vehicle;
+
+public class SportsCar extends Car {
+	
+	private static final int MAX_SPEED = 200;
+	
+	@Override
+	public void setSpeed(int speed) throws SpeedException {
+		int s = new_speed;
+		if (speed > MAX_SPEED) {
+			throw new SpeedException();	
+			}
+		else {
+			this.speed = speed;
+		}
+		}
+	
+	
+}

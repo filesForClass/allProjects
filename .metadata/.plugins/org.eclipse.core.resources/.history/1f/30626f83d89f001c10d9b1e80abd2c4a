@@ -1,0 +1,40 @@
+package lab3;
+
+public class Cube extends Box {
+	Cube(double s){
+		super(s,s,s);
+	}
+	
+	@Override 
+	public void setLength(double l) {
+		if (getLength() != l) {
+			this.Cube(l);
+		}
+	}
+	@Override 
+	public void setWidth(double w) {
+		if (getWidth() != w) {
+			this.Cube(w);
+		}
+	}
+	@Override 
+	public void setHeight(double h) {
+		if (getHeight() != h) {
+			this.Cube(h);
+		}
+	}
+	public void setSide(double s) {
+		if (s <= 0) {
+			System.out.println("Less than 0");
+		}
+		else {
+			super.setLength(s);
+			super.setHeight(h);
+			super.setWidth(w);
+		}
+	}
+	public double getSide() {
+		return (this.getLength());
+	}
+}
+

@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package lab3;
+
+/**
+ * @author Tiffany
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cube cube1 = new Cube(5);
+		Cube cube2 = new Cube(8);
+		
+		cube1.printBox();
+		cube2.printBox();
+		
+		cube1.setLength(20);
+		
+		cube1.printBox();
+		
+		cube1.getSide();
+		
+		cube1.printBox();
+		
+		cube2.setWidth(-5);
+		
+		cube2.printBox();
+	}
+
+}

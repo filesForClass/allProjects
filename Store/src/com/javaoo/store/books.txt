@@ -1,0 +1,6 @@
+COBOL for Java Programmers
+Isaac B Mortimer
+45.95
+Harry Potter
+J.K. Rowling
+30.00

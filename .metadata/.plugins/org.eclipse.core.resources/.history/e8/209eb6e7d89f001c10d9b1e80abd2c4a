@@ -1,0 +1,40 @@
+package lab3;
+
+public class Cube extends Box {
+	Cube(double s){
+		super(s,s,s);
+	}
+	
+	@Override 
+	public void setLength(double l) {
+		if (getLength() != l) {
+			setSide(l);
+		}
+	}
+	@Override 
+	public void setWidth(double w) {
+		if (getWidth() != w) {
+			setSide(w);
+		}
+	}
+	@Override 
+	public void setHeight(double h) {
+		if (getHeight() != h) {
+			setSide(h);
+		}
+	}
+	public void setSide(double s) {
+		if (s <= 0) {
+			System.out.println("Invalid input (<=0)");
+		}
+		else {
+			super.setLength(s);
+			super.setHeight(s);
+			super.setWidth(s);
+		}
+	}
+	public double getSide() {
+		return (this.getLength());
+	}
+}
+

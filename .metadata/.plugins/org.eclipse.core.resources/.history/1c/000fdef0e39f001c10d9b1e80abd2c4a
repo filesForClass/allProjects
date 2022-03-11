@@ -1,0 +1,9 @@
+package com.lq.vehicle;
+
+public class StationWagon extends Car {
+	
+	@Override void setSpeed(int speed) {
+	}
+	
+	
+}

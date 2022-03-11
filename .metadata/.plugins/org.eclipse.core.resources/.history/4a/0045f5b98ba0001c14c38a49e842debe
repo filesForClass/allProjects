@@ -1,0 +1,25 @@
+package com.javaoo.store.drivers;
+import com.javaoo.store.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Item[] myInventory = new Item[50];
+		
+		myInventory[0] = new Book("Godzilla on Holiday", 24.95, 5,
+				"Wesley Wynham-Price", "Ransom House", "FICTION");
+		myInventory[1] = new Book("Loch Ness Memories", 49.95, 1,
+				"Fred MacMurray", "Penquin Press", "FICTION");
+		myInventory[2] = new Book("MVS JCL", 89.95, 3,
+				"Steve Balmer", "Microsoft Press", "NON-FICTION");
+		myInventory[3] = new Book("Lingo in a NutShell", 19.95, 8,
+				"Bill Bates", "O'Reilly", "NON-FICTION");
+		myInventory[4] = new Book("Grid Computing", 79.95, 2,
+				"Bobby Beowold", "Trouser Press", "NON-FICTION");
+		
+		
+		
+	}
+
+}

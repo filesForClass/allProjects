@@ -1,0 +1,11 @@
+package com.lq.vehicle;
+
+public class Main {
+	public static void main(String[] args) {
+		SportsCar Sc = new SportsCar();
+		Sc.setSpeed(300);
+		Sc.getSpeed();
+	}
+
+	
+}

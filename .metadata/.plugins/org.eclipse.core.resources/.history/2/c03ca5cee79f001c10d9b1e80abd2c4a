@@ -1,0 +1,13 @@
+package lab3;
+
+public class Square extends Rectangle {
+	
+	Square(double s){
+		if (s < 0) {}
+		else {
+		super.setLength(s);
+		super.setWidth(s);
+		}
+	}
+
+}

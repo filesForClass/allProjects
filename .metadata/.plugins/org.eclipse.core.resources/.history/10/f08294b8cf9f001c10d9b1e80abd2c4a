@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package lab3;
+
+/**
+ * @author Tiffany
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Box b = new Box(0);
+		
+		b.printBox();
+	}
+
+}

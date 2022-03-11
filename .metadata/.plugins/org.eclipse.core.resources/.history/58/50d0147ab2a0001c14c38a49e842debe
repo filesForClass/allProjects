@@ -1,0 +1,31 @@
+package com.lq.ac;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public class ReadPropertiesFile {
+
+	public static void main(String[] args) {
+
+
+		try {
+			
+			FileInputStream fis = new FileInputStream("D:\\deleteLater\\myprop.txt");
+			
+			Properties p = new Properties();
+			p.load(fis);
+			
+			String username = p.getProperty("user.name");
+			
+			System.out.println(userName);
+		}
+		catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		catch (IOException e){
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.lq.exercises;
+
+public class Box {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		private double height;
+		private double width;
+		private double length;
+		
+		Box(double h, double w, double l){
+			height = h;
+			width = w;
+			length = l;
+		}
+		
+		Box(double s){
+			
+			height = width = length = s;
+			
+		}
+		
+		public double getHeight() {
+			return height;
+		}
+		
+		public double getWidth() {
+			return width;
+		}
+		
+		public double getLength() {
+			return length;
+		}
+
+	}
+
+}
