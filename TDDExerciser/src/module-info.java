@@ -1,0 +1,3 @@
+module TDDExerciser {
+	requires junit;
+}
